@@ -29,6 +29,9 @@ minecraft {
 }
 
 repositories {
+    maven {
+        url "https://cursemaven.com"
+    }
     maven { // The repo from which to get waila
         name "Mobius Repo"
         // url "http://mobiusstrip.eu/maven"
@@ -83,7 +86,7 @@ dependencies {
 
     deobfCompile "mcp.mobius.waila:Hwyla:${waila_version}:api"
 
-    deobfCompile("mcjty.theoneprobe:TheOneProbe-${top_minecraft_version}:${top_version}") {
+    deobfCompile("curse.maven:the-one-probe-245211:2667280") {
         transitive = false
     }
 
